@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>我的主页</title>
+	<meta content="yes" name="apple-mobile-web-app-capable">
+    <meta content="yes" name="apple-touch-fullscreen">
+    <meta content="telephone=no,email=no" name="format-detection">        
+    <script src="http://g.tbcdn.cn/mtb/lib-flexible/0.3.4/??flexible_css.js,flexible.js"></script>
+	<link rel="stylesheet" type="text/css" href="css/reset.css">
+	<link rel="stylesheet" type="text/css" href="font/iconfont.css">
+	<link rel="stylesheet" type="text/css" href="css/index.css">
+</head>
+<body>
+	<div id="ui-content">
+		<div class="banner">
+			<img src="images/bg-notify.png">
+		</div>
+		<h3 class="ui-title">菜单列表</h3>
+		<div class="menus flex flex-hw">
+			<dl>
+				<dt>
+					<img src="images/8.jpg">
+				</dt>
+				<dd>
+					问题件
+				</dd>
+			</dl>
+			<dl>
+				<dt>
+					<img src="images/909.jpg">
+				</dt>
+				<dd>
+					问题件
+				</dd>
+			</dl>
+			<dl>
+				<dt>
+					<img src="images/10.jpg">
+				</dt>
+				<dd>
+					问题件
+				</dd>
+			</dl>
+			<dl>
+				<dt>
+					<img src="images/12.jpg">
+				</dt>
+				<dd>
+					问题件
+				</dd>
+			</dl>
+			<dl>
+				<dt>
+					<img src="images/202.jpg">
+				</dt>
+				<dd>
+					问题件
+				</dd>
+			</dl>
+			<dl>
+				<dt>
+					<img src="images/1.jpg">
+				</dt>
+				<dd>
+					问题件
+				</dd>
+			</dl>
+		</div>
+	</div>
+	<script type="text/javascript" src="js/libs/jquery-1.11.3.min.js"></script>
+	<script type="text/javascript" src="js/libs/zepto.min.js"></script>
+	<script type="text/javascript" src="js/libs/zepto-tap.js"></script>
+	<script type="text/javascript">
+		var menus = document.getElementsByClassName('menus')[0];
+		var lists = menus.children;
+		for(var i=0;i<lists.length;i++){
+			lists[i].onclick = function(e){
+				if(e.target.tagName == 'IMG'){
+					e.target.parentNode.className="rotate";//parentNode获取到上一级父级元素
+				};
+			}
+		}
+	</script>
+</body>
+</html>

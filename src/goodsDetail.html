@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta content="yes" name="apple-mobile-web-app-capable">
+    <meta content="yes" name="apple-touch-fullscreen">
+    <meta content="telephone=no,email=no" name="format-detection">        
+    <script src="http://g.tbcdn.cn/mtb/lib-flexible/0.3.4/??flexible_css.js,flexible.js"></script>
+	<link rel="stylesheet" type="text/css" href="css/reset.css">
+	<link rel="stylesheet" type="text/css" href="font/iconfont.css">
+	<link rel="stylesheet" type="text/css" href="css/goodsList.css">	
+	<title>商品详情页</title>
+</head>
+<body>
+	<header>
+		<em class="iconfont icon-fanhui"></em>
+		下单
+		<span><em class="iconfont icon-dingwei"></em>深圳</span>
+	</header>
+	<div class="imgDetail">
+		<dl>
+			<dt><img src="images/banner.png"><em>有货</em></dt>
+			<dd>
+				<p>苹果（Apple）iphone 6s 玫瑰金 16G 金</p>
+				<p>￥4899.00</p>
+			</dd>
+		</dl>
+	</div>
+	<div class="goodsDetail">
+		<div class="colorSelect">
+			<h4>颜色：</h4>
+			<p>
+				<span class="click"></span>
+				<span></span>
+				<span></span>
+				<span></span>
+			</p>
+			<h4>
+				选购类型：
+			</h4>
+		</div>
+
+		<div class="typeSelect">
+			<p>
+				<span class="click">公开版6s 16G 内存<em class="active"></em></span>
+				<span>公开版6s 16G 内存<em></em></span>
+				<span>公开版6s 16G 内存<em></em></span>
+				<span>公开版6s 16G 内存<em></em></span>
+			</p>
+		</div>
+	</div>
+	<footer class="flex flex-pack-around">
+		<dl>
+			<dt class="iconfont icon-guanzhu"></dt>
+			<dd>关注</dd>
+		</dl>
+		<dl class="selected">
+			<dt class="iconfont icon-gerenzhongxin selected"></dt>
+			<dt ></dt>
+			<dd>个人中心</dd>
+		</dl>
+	</footer>
+
+	<script type="text/javascript" src="js/libs/jquery-1.11.3.min.js"></script>
+	<script type="text/javascript">
+		//选择框打勾变色函数封装
+		function select(el1){
+			$(el1).find('span').click(function(){
+				$(this).addClass('click').siblings().removeClass('click');
+			});
+		};
+		select('.colorSelect');
+		//select('.typeSelect');
+		// if($('.typeSelect').find('span').has('click')){
+		// 	$('.typeSelect').find('span').find('em').addClass('active');
+		// }else{
+		// 	$('.typeSelect').find('span').find('em').removeClass('active');
+		// }
+		$('.typeSelect').find('span').click(function(){
+			$(this).addClass('click').find('em').addClass('active').parent().siblings().removeClass('click').find('em').removeClass('active');
+			//$(this).find('em').addClass('active').siblings().find('em').removeClass('active');
+		});
+	</script>
+</body>
+</html>

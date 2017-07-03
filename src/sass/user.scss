@@ -1,0 +1,114 @@
+@charset "utf-8";
+@import "mobile.scss";
+html,body{
+	background: #efeff4;
+}
+.fonts{
+	font-size: pxToRem(32);
+	color: #646464;
+}
+header{
+	width: 100%;
+	height: pxToRem(88);
+	text-align: center;
+	line-height: pxToRem(88);
+	font-size: pxToRem(38);
+	color: #fff;
+	background: #cf1010;
+	position: relative;
+	span{
+		font-size: pxToRem(20);
+		position: absolute;
+		right: pxToRem(20);
+		top: 0;
+
+	}
+	.icon-fanhui{
+		font-size: pxToRem(30);
+		position: absolute;
+		left: pxToRem(20);
+		top: 3%;
+		color: #fff;
+	}
+	.icon-dingwei{
+		font-size: pxToRem(30);
+		margin-right: pxToRem(10);
+		color: #fff;
+	}
+}
+
+.user-title{
+	width: 100%;
+	background: #fff;
+	height: pxToRem(140);
+	padding: pxToRem(40) 0 0 pxToRem(40);
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+	margin-bottom: pxToRem(40);
+	em{
+		display: inline-block;
+		width: pxToRem(74);
+		height: pxToRem(67);
+		background: url(../images/User-info.png) no-repeat;
+		background-size: 100%;
+		margin-right: pxToRem(40);
+	}
+	a{
+		height: pxToRem(67);
+		line-height: pxToRem(67);
+		display: inline-block;
+		margin-right: pxToRem(20);
+	}
+}
+
+.infor{
+	width: 100%;
+	//height: pxToRem(100);
+	background: #fff;
+	line-height: pxToRem(100);
+	padding-left: pxToRem(40);
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+	margin-bottom: pxToRem(10);
+	.icon-xiaoxi, .icon-guanzhu1, .icon-huankuan{
+		font-size: pxToRem(50);
+		margin-right: pxToRem(40);
+	}
+	em{
+		display: inline-block;
+	}
+}
+
+footer{
+	position: fixed;
+	left: 0;
+	bottom: 0;
+	width: 100%;
+	height: pxToRem(98);
+	background: #fff;
+	padding-top: pxToRem(10);
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+	.icon-guanzhu, .icon-gerenzhongxin{
+		font-size: pxToRem(34);
+	}
+	dt{
+		text-align: center;
+	}
+	dd{
+		font-size: pxToRem(20);
+		text-align: center;
+	}
+	.selected{
+		color: #cf1010;
+	}
+}
+footer::before{
+	content: "";
+	height: 1px;
+	position: absolute;
+	left: 0;
+	width: 100%;
+	top:0;
+	background: #bcbcbc;
+}

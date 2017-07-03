@@ -1,0 +1,116 @@
+@charset "utf-8";
+@import "mobile.scss";
+html,body{
+	overflow: hidden;
+}
+header{
+	width: 100%;
+	height: pxToRem(88);
+	text-align: center;
+	line-height: pxToRem(88);
+	font-size: pxToRem(38);
+	color: #fff;
+	background: #cf1010;
+	position: relative;
+	span{
+		font-size: pxToRem(20);
+		position: absolute;
+		right: pxToRem(20);
+		top: 0;
+
+	}
+	.icon-fanhui{
+		font-size: pxToRem(30);
+		position: absolute;
+		left: pxToRem(20);
+		top: 3%;
+		color: #fff;
+	}
+	.icon-dingwei{
+		font-size: pxToRem(30);
+		margin-right: pxToRem(10);
+		color: #fff;
+	}
+}
+.content{
+	width: 100%;
+	height: pxToRem(1350);
+	position: relative;
+	background: url(../images/login-bg.png) no-repeat;
+	background-size: 100% 100%;
+	.login{
+		width: pxToRem(480);
+		height: pxToRem(500);
+		background: #fff;
+		border-radius: 15px;
+		position: absolute;
+		top: 23%;
+		header{
+			width: 100%;
+			height: 18%;
+			text-align: center;
+			background: #f0f0f0;
+			color: #666;
+			font-size: pxToRem(34);
+			border-top-left-radius: 15px;
+			border-top-right-radius: 15px;
+		}
+		p{
+			width: 100%;
+			height: 18%;
+			padding: 0 pxToRem(20);
+			-webkit-box-sizing: border-box;
+			box-sizing: border-box;
+			.icon-yonghuming, .icon-mima{
+				font-size: pxToRem(30);
+			}
+			label{				
+				width: 100%;
+				padding: pxToRem(40) 0 pxToRem(20) 0;
+				display: inline-block;
+				border-bottom: 1px solid #d9d9d9;
+				input{
+					padding-left: pxToRem(30);
+				}
+				input::-webkit-input-placeholder{
+					font-size: pxToRem(20);
+				}
+			}
+		}
+		.loginButton{
+			width: 100%;
+			padding: 0 pxToRem(20);
+			-webkit-box-sizing: border-box;
+			box-sizing: border-box; 
+			margin-top: pxToRem(54);
+			button{
+				width: 100%;
+				height: pxToRem(80);
+				line-height: pxToRem(80);
+				background: #cf1010;
+				color: #fff;
+				font-size: pxToRem(30);
+				border-radius: 6px;
+				position: relative;
+				strong{
+					display: inline-block;
+					width: pxToRem(16);
+					height: pxToRem(28);
+					background: url(../images/Arrow.png) no-repeat;
+					background-size: pxToRem(16) pxToRem(28); 
+					position: absolute;
+					right: pxToRem(25);
+					top: 35%;
+				}
+			}
+		}
+		.forgetPsw{
+			width: 100%;
+			text-align: center;
+			font-size: pxToRem(24);
+			color: #8d8d8d;
+			margin-top: pxToRem(32);
+		}
+	}
+
+}
