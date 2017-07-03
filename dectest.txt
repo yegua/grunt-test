@@ -1,6 +1,6 @@
 创造dev分支
-<<<<<<< HEAD
+
 Creating a new branch is quick & simple.
-=======
+
 创造newbranch分支
->>>>>>> newbranch
+
