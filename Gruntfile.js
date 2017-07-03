@@ -250,7 +250,7 @@ module.exports = function(grunt) {
   grunt.loadNpmTasks('grunt-contrib-connect');
   grunt.loadNpmTasks('grunt-contrib-watch'); 
   grunt.registerTask('live', ['connect', 'watch']);
-   grunt.registerTask('default', ['clean','copy', 'uglify:generated','cssmin','imagemin','useminPrepare','usemin','htmlmin']);
+  grunt.registerTask('default', ['clean','copy', 'uglify:generated','cssmin','imagemin','useminPrepare','usemin','htmlmin']);
   //http://127.0.0.1:8080/src/ 默认执行index.html
   
 };
